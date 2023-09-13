@@ -55,7 +55,7 @@ class _ViewDetailState extends State<ViewDetail> {
                   isViewDetail
                       ? Icons.keyboard_arrow_up_sharp
                       : Icons.keyboard_arrow_down_sharp,
-                  color: scheme.primary,
+                  color: Color.fromARGB(255, 16, 2, 214),
                   size: 30,
                 )
               ],

@@ -21,10 +21,11 @@ class PromoText extends StatelessWidget {
           vertical: 48,
         ),
         width: double.infinity,
-        color: scheme.primary.withOpacity(0.1),
+        color: Color.fromARGB(255, 16, 2, 214).withOpacity(0.1),
         child: Text(
           title,
-          style: textTheme.bodyText1?.copyWith(color: scheme.primary),
+          style: textTheme.bodyText1
+              ?.copyWith(color: Color.fromARGB(255, 16, 2, 214)),
         ),
       ),
     );

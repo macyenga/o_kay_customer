@@ -25,7 +25,8 @@ class LabelButton extends StatelessWidget {
           child: Container(
             padding: const EdgeInsets.all(10),
             decoration: BoxDecoration(
-              color: isSelected ? scheme.primary : Colors.white,
+              color:
+                  isSelected ? Color.fromARGB(255, 16, 2, 214) : Colors.white,
               borderRadius: BorderRadius.circular(40),
               boxShadow: [
                 BoxShadow(
@@ -38,7 +39,8 @@ class LabelButton extends StatelessWidget {
             ),
             child: Icon(
               icon,
-              color: isSelected ? Colors.white : scheme.primary,
+              color:
+                  isSelected ? Colors.white : Color.fromARGB(255, 16, 2, 214),
             ),
           ),
         ),

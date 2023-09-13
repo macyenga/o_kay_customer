@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+  
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCG2YHIuPJYMOJzS6wSw5eZ0dTYXnhZFLs"></script>
   <!--
     If you are serving your web app in a path other than the root, change the
     href value below to reflect the base path you are serving from.
@@ -55,5 +58,29 @@
       });
     });
   </script>
+
+<script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-firestore.js"></script>
+
+<script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCG2YHIuPJYMOJzS6wSw5eZ0dTYXnhZFLs&libraries=drawing,visualization,places">
+</script>
+
+    <!-- Firebase Configuration -->
+    <script>
+      var firebaseConfig = {
+        apiKey: "...",
+        authDomain: "[YOUR_PROJECT].firebaseapp.com",
+        databaseURL: "https://[YOUR_PROJECT].firebaseio.com",
+        projectId: "[YOUR_PROJECT]",
+        storageBucket: "[YOUR_PROJECT].appspot.com",
+        messagingSenderId: "...",
+        appId: "1:...:web:...",
+        measurementId: "G-...",
+      };
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
 </body>
 </html>

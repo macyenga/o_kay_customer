@@ -62,13 +62,13 @@ class VoucherSaving extends StatelessWidget {
               children: [
                 Icon(
                   Icons.local_offer_outlined,
-                  color: scheme.primary,
+                  color: Color.fromARGB(255, 16, 2, 214),
                 ),
                 const SizedBox(width: 10),
                 Text(
                   'Add a Voucher',
                   style: TextStyle(
-                    color: scheme.primary,
+                    color: Color.fromARGB(255, 16, 2, 214),
                     fontSize: 16,
                     fontWeight: FontWeight.w600,
                   ),

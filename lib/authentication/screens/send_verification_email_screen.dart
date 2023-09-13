@@ -8,7 +8,7 @@ import 'package:o_kay_customer/authentication/widgets/custom_textbutton.dart';
 import 'package:o_kay_customer/constants/colors.dart';
 import 'package:o_kay_customer/providers/authentication_provider.dart';
 import 'package:o_kay_customer/providers/internet_provider.dart';
-import 'package:o_kay_customer/widgets/my_snack_bar.dart';
+import 'package:o_kay_customer/widgets/custom_snackbar.dart';
 import 'package:provider/provider.dart';
 
 class SendVerificationEmailScreen extends StatefulWidget {
@@ -40,7 +40,8 @@ class _SendVerificationEmailScreenState
     await internetProvider.checkInternetConnection();
     if (internetProvider.hasInternet == false) {
       Navigator.pop(context);
-      openSnackbar(context, 'Check your internet connection', scheme.primary);
+      openSnackbar(context, 'Check your internet connection',
+          Color.fromARGB(255, 16, 2, 214));
     } else {
       setState(() {
         alreadySent = true;
@@ -83,7 +84,7 @@ class _SendVerificationEmailScreenState
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
-        foregroundColor: scheme.primary,
+        foregroundColor: Color.fromARGB(255, 16, 2, 214),
       ),
       body: Padding(
         padding: const EdgeInsets.all(15),

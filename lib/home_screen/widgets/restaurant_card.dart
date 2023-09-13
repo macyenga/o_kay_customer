@@ -35,7 +35,7 @@ class RestaurantCard extends StatelessWidget {
                 left: 0,
                 child: Container(
                   decoration: BoxDecoration(
-                    color: scheme.primary,
+                    color: Color.fromARGB(255, 16, 2, 214),
                     borderRadius: const BorderRadius.only(
                       topRight: Radius.circular(20),
                       bottomRight: Radius.circular(20),
@@ -142,7 +142,7 @@ class RestaurantCard extends StatelessWidget {
               Icon(
                 Icons.directions_bike,
                 size: 14,
-                color: scheme.primary,
+                color: Color.fromARGB(255, 16, 2, 214),
               ),
               const SizedBox(width: 5),
               Text(
@@ -150,8 +150,9 @@ class RestaurantCard extends StatelessWidget {
                     ? '\$ ${shop.deliveryPrice}'
                     : 'Free delivery',
                 style: TextStyle(
-                  color:
-                      shop.deliveryPrice != 0 ? Colors.black : scheme.primary,
+                  color: shop.deliveryPrice != 0
+                      ? Colors.black
+                      : Color.fromARGB(255, 16, 2, 214),
                   fontSize: 12,
                   // fontFamily: regularFont,
                 ),

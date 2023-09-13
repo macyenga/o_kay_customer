@@ -72,13 +72,13 @@ class SubtotalCard extends StatelessWidget {
                   children: [
                     Icon(
                       Icons.local_offer_outlined,
-                      color: scheme.primary,
+                      color: Color.fromARGB(255, 16, 2, 214),
                     ),
                     const SizedBox(width: 10),
                     Text(
                       'Apply a voucher',
                       style: TextStyle(
-                        color: scheme.primary,
+                        color: Color.fromARGB(255, 16, 2, 214),
                         fontSize: 17,
                         fontWeight: FontWeight.bold,
                       ),

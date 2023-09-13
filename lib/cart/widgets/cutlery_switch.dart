@@ -20,7 +20,7 @@ class CutlerySwitch extends StatelessWidget {
               children: [
                 Icon(
                   Icons.restaurant_outlined,
-                  color: scheme.primary,
+                  color: Color.fromARGB(255, 16, 2, 214),
                 ),
                 const SizedBox(width: 10),
                 Text(
@@ -34,7 +34,7 @@ class CutlerySwitch extends StatelessWidget {
             ),
             Switch(
               value: isCutlery,
-              activeTrackColor: scheme.primary,
+              activeTrackColor: Color.fromARGB(255, 16, 2, 214),
               activeColor: Colors.white,
               onChanged: onChanged,
             )

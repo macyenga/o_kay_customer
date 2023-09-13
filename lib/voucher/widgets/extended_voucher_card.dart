@@ -26,7 +26,7 @@ class ExtendedVoucherCard extends StatelessWidget {
                   margin: const EdgeInsets.all(0),
                   color: isCartMode
                       ? Colors.white
-                      : scheme.primary.withOpacity(0.05),
+                      : Color.fromARGB(255, 16, 2, 214).withOpacity(0.05),
                   elevation: 0,
                   shape: RoundedRectangleBorder(
                     borderRadius: const BorderRadius.only(
@@ -54,7 +54,7 @@ class ExtendedVoucherCard extends StatelessWidget {
                 width:
                     currentPrice / minPrice * MediaQuery.of(context).size.width,
                 height: 2,
-                color: scheme.primary,
+                color: Color.fromARGB(255, 16, 2, 214),
               ),
             ],
           )

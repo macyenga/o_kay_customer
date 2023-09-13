@@ -204,7 +204,7 @@ class CategorySection extends StatelessWidget {
               Icons.add,
               color: Colors.white,
             ),
-            backgroundColor: scheme.primary,
+            backgroundColor: Color.fromARGB(255, 16, 2, 214),
             onPressed: () {},
           ),
         )
@@ -217,7 +217,7 @@ class CategorySection extends StatelessWidget {
       margin: const EdgeInsets.only(right: 4.0),
       child: Icon(
         Icons.whatshot,
-        color: scheme.primary,
+        color: Color.fromARGB(255, 16, 2, 214),
         size: 20.0,
       ),
     );
@@ -225,10 +225,11 @@ class CategorySection extends StatelessWidget {
 
   Widget _buildFoodHotSaleIcon() {
     return Container(
-      child: Icon(Icons.whatshot, color: scheme.primary, size: 16.0),
+      child: Icon(Icons.whatshot,
+          color: Color.fromARGB(255, 16, 2, 214), size: 16.0),
       padding: const EdgeInsets.all(4.0),
       decoration: BoxDecoration(
-        color: scheme.primary.withOpacity(0.1),
+        color: Color.fromARGB(255, 16, 2, 214).withOpacity(0.1),
         borderRadius: BorderRadius.circular(16.0),
       ),
     );

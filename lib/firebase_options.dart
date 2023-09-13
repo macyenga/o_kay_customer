@@ -44,41 +44,38 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyA9pZIxK8BK4-HqPqMUTGjbMx2hMBtc78M',
-    appId: '1:360679595267:web:a5a0dd68cbd07efcba9d36',
-    messagingSenderId: '360679595267',
-    projectId: 'foodpanda-7ecb8',
-    authDomain: 'foodpanda-7ecb8.firebaseapp.com',
-    storageBucket: 'foodpanda-7ecb8.appspot.com',
+    apiKey: 'AIzaSyAMEGpfQRUooLYNSm_Sp9AUsOBfACal_y4',
+    appId: '1:257443683914:web:3c000465c601e9c96710b3',
+    messagingSenderId: '257443683914',
+    projectId: 'kaysdraff',
+    authDomain: 'kaysdraff.firebaseapp.com',
+    storageBucket: 'kaysdraff.appspot.com',
+    measurementId: 'G-G7E0JBX6TP',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBVvoUDdeQlX2N9W_R7IOAZWPZvha1CTv4',
-    appId: '1:360679595267:android:58029c4a049442c3ba9d36',
-    messagingSenderId: '360679595267',
-    projectId: 'foodpanda-7ecb8',
-    storageBucket: 'foodpanda-7ecb8.appspot.com',
+    apiKey: 'AIzaSyAm-JSZZ69UmXQQ0e7fb5YYedWCNvd6vy0',
+    appId: '1:257443683914:android:dbc4a977d3c531d26710b3',
+    messagingSenderId: '257443683914',
+    projectId: 'kaysdraff',
+    storageBucket: 'kaysdraff.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDYngytanAwYsEbv9Rcb43yavJyI4vFrck',
-    appId: '1:360679595267:ios:f62d5f14f79b3507ba9d36',
-    messagingSenderId: '360679595267',
-    projectId: 'foodpanda-7ecb8',
-    storageBucket: 'foodpanda-7ecb8.appspot.com',
-    iosClientId:
-        '360679595267-jvksr2n7v55seu8cgttmbs3mo63cjnsu.apps.googleusercontent.com',
-    iosBundleId: 'com.example.foodpandaUser',
+    apiKey: 'AIzaSyB5O1uIgQqLnFBW1lfUqIKKKxXAg1SJmik',
+    appId: '1:257443683914:ios:80319f0ccee385506710b3',
+    messagingSenderId: '257443683914',
+    projectId: 'kaysdraff',
+    storageBucket: 'kaysdraff.appspot.com',
+    iosBundleId: 'com.example.oKayCustomer',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyDYngytanAwYsEbv9Rcb43yavJyI4vFrck',
-    appId: '1:360679595267:ios:8f6a79df2e971533ba9d36',
-    messagingSenderId: '360679595267',
-    projectId: 'foodpanda-7ecb8',
-    storageBucket: 'foodpanda-7ecb8.appspot.com',
-    iosClientId:
-        '360679595267-4ijdm1ee7a4th07ce7o9angcknd7qam0.apps.googleusercontent.com',
-    iosBundleId: 'com.example.foodpandaUser.RunnerTests',
+    apiKey: 'AIzaSyB5O1uIgQqLnFBW1lfUqIKKKxXAg1SJmik',
+    appId: '1:257443683914:ios:9b559568521905476710b3',
+    messagingSenderId: '257443683914',
+    projectId: 'kaysdraff',
+    storageBucket: 'kaysdraff.appspot.com',
+    iosBundleId: 'com.example.oKayCustomer.RunnerTests',
   );
 }

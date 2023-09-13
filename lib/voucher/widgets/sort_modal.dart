@@ -48,7 +48,8 @@ Future<void> showSortModal({
                           ),
                         ),
                         InkWell(
-                          splashColor: scheme.primary.withOpacity(0.3),
+                          splashColor:
+                              Color.fromARGB(255, 16, 2, 214).withOpacity(0.3),
                           onTap: () {
                             setState(() {
                               sortBy = 'latest';
@@ -59,7 +60,7 @@ Future<void> showSortModal({
                             child: Text(
                               'Clear',
                               style: TextStyle(
-                                color: scheme.primary,
+                                color: Color.fromARGB(255, 16, 2, 214),
                                 fontWeight: FontWeight.w600,
                               ),
                             ),
@@ -83,7 +84,7 @@ Future<void> showSortModal({
                               sortBy == 'latest'
                                   ? Icons.radio_button_checked
                                   : Icons.radio_button_off,
-                              color: scheme.primary,
+                              color: Color.fromARGB(255, 16, 2, 214),
                             )
                           ],
                         ),
@@ -104,7 +105,7 @@ Future<void> showSortModal({
                               sortBy == 'expiring'
                                   ? Icons.radio_button_checked
                                   : Icons.radio_button_off,
-                              color: scheme.primary,
+                              color: Color.fromARGB(255, 16, 2, 214),
                             )
                           ],
                         ),
@@ -125,7 +126,7 @@ Future<void> showSortModal({
                               sortBy == 'minimum'
                                   ? Icons.radio_button_checked
                                   : Icons.radio_button_off,
-                              color: scheme.primary,
+                              color: Color.fromARGB(255, 16, 2, 214),
                             )
                           ],
                         ),

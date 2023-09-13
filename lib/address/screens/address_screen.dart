@@ -26,7 +26,7 @@ class AddressScreenState extends State<AddressScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
-        foregroundColor: scheme.primary,
+        foregroundColor: Color.fromARGB(255, 16, 2, 214),
         title: const Text(
           'Addresses',
           style: TextStyle(fontSize: 16, color: Colors.black),
@@ -78,7 +78,7 @@ class AddressScreenState extends State<AddressScreen> {
                           padding: const EdgeInsets.symmetric(
                               horizontal: 15, vertical: 8),
                           decoration: BoxDecoration(
-                            color: scheme.primary,
+                            color: Color.fromARGB(255, 16, 2, 214),
                             borderRadius: BorderRadius.circular(8),
                           ),
                           child: const Text(
@@ -150,7 +150,8 @@ class AddressScreenState extends State<AddressScreen> {
                                                                   : Icons
                                                                       .location_on_outlined
                                                   : Icons.location_on_outlined,
-                                              color: scheme.primary,
+                                              color: Color.fromARGB(
+                                                  255, 16, 2, 214),
                                               size: 30,
                                             )
                                           : Padding(
@@ -162,7 +163,8 @@ class AddressScreenState extends State<AddressScreen> {
                                                         address.id
                                                     ? Icons.radio_button_checked
                                                     : Icons.radio_button_off,
-                                                color: scheme.primary,
+                                                color: Color.fromARGB(
+                                                    255, 16, 2, 214),
                                               ),
                                             ),
                                       const SizedBox(width: 10),
@@ -227,7 +229,8 @@ class AddressScreenState extends State<AddressScreen> {
                                         },
                                         child: Icon(
                                           Icons.edit_outlined,
-                                          color: scheme.primary,
+                                          color:
+                                              Color.fromARGB(255, 16, 2, 214),
                                           size: 30,
                                         ),
                                       ),
@@ -240,7 +243,8 @@ class AddressScreenState extends State<AddressScreen> {
                                               },
                                               child: Icon(
                                                 Icons.delete_outline_rounded,
-                                                color: scheme.primary,
+                                                color: Color.fromARGB(
+                                                    255, 16, 2, 214),
                                                 size: 30,
                                               ),
                                             )

@@ -19,7 +19,7 @@ import 'package:o_kay_customer/providers/cart_provider.dart';
 import 'package:o_kay_customer/providers/location_provider.dart';
 import 'package:o_kay_customer/providers/order_provider.dart';
 import 'package:o_kay_customer/voucher/controllers/voucher_controller.dart';
-import 'package:o_kay_customer/widgets/my_snack_bar.dart';
+import 'package:o_kay_customer/widgets/custom_snackbar.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:provider/provider.dart';
 
@@ -129,7 +129,7 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
       );
     } else {
       openSnackbar(context, 'Please wait for the current order to finish!',
-          scheme.primary);
+          Color.fromARGB(255, 16, 2, 214));
     }
   }
 
@@ -138,7 +138,7 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
-        foregroundColor: scheme.primary,
+        foregroundColor: Color.fromARGB(255, 16, 2, 214),
         title: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -199,7 +199,7 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
                               children: [
                                 Icon(
                                   Icons.location_on_outlined,
-                                  color: scheme.primary,
+                                  color: Color.fromARGB(255, 16, 2, 214),
                                 ),
                                 const SizedBox(width: 10),
                                 const Expanded(
@@ -247,7 +247,7 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
                                   },
                                   child: Icon(
                                     Icons.edit_outlined,
-                                    color: scheme.primary,
+                                    color: Color.fromARGB(255, 16, 2, 214),
                                   ),
                                 ),
                               ],
@@ -299,14 +299,14 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
                                   children: [
                                     Icon(
                                       Icons.add,
-                                      color: scheme.primary,
+                                      color: Color.fromARGB(255, 16, 2, 214),
                                     ),
                                     const SizedBox(width: 10),
                                     Text(
                                       'Add delivery instructions',
                                       style: TextStyle(
                                         fontWeight: FontWeight.w600,
-                                        color: scheme.primary,
+                                        color: Color.fromARGB(255, 16, 2, 214),
                                       ),
                                     )
                                   ],
@@ -323,7 +323,7 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
                                       const SizedBox(width: 10),
                                       Icon(
                                         Icons.arrow_forward_ios_rounded,
-                                        color: scheme.primary,
+                                        color: Color.fromARGB(255, 16, 2, 214),
                                         size: 15,
                                       )
                                     ],
@@ -351,7 +351,7 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
                             const SizedBox(width: 50),
                             Switch(
                               value: false,
-                              activeTrackColor: scheme.primary,
+                              activeTrackColor: Color.fromARGB(255, 16, 2, 214),
                               activeColor: Colors.white,
                               onChanged: (value) {},
                             ),
@@ -373,7 +373,7 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
                           children: [
                             Icon(
                               Icons.credit_card_outlined,
-                              color: scheme.primary,
+                              color: Color.fromARGB(255, 16, 2, 214),
                             ),
                             const SizedBox(width: 10),
                             const Expanded(
@@ -393,7 +393,7 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
                               },
                               child: Icon(
                                 Icons.edit_outlined,
-                                color: scheme.primary,
+                                color: Color.fromARGB(255, 16, 2, 214),
                               ),
                             ),
                           ],
@@ -439,7 +439,7 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
                           children: [
                             Icon(
                               Icons.receipt_long_outlined,
-                              color: scheme.primary,
+                              color: Color.fromARGB(255, 16, 2, 214),
                             ),
                             const SizedBox(width: 10),
                             const Text(
@@ -574,7 +574,7 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
                           text: 'Terms & Conditions',
                           style: TextStyle(
                             wordSpacing: 1,
-                            color: scheme.primary,
+                            color: Color.fromARGB(255, 16, 2, 214),
                             fontSize: 12,
                             fontWeight: FontWeight.w500,
                           ),
@@ -592,7 +592,7 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
                           text: 'Privacy Policy',
                           style: TextStyle(
                             wordSpacing: 1,
-                            color: scheme.primary,
+                            color: Color.fromARGB(255, 16, 2, 214),
                             fontSize: 12,
                             fontWeight: FontWeight.w500,
                           ),

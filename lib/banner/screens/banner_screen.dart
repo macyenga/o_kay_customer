@@ -9,7 +9,7 @@ import 'package:o_kay_customer/shop_details/screens/shop_details.dart';
 import 'package:o_kay_customer/shop_details/widgets/ficon_button.dart';
 import 'package:o_kay_customer/models/banner.dart' as model;
 import 'package:o_kay_customer/voucher/controllers/voucher_controller.dart';
-import 'package:o_kay_customer/widgets/my_snack_bar.dart';
+import 'package:o_kay_customer/widgets/custom_snackbar.dart';
 
 class BannerScreen extends StatefulWidget {
   static const String routeName = '/banner-screen';
@@ -69,7 +69,7 @@ class _BannerScreenState extends State<BannerScreen> {
         await voucherController.saveVoucher(voucherId: voucherId);
     if (errorText == null) {
       openSnackbar(context, 'Your voucher is saved to your voucher list',
-          scheme.primary);
+          Color.fromARGB(255, 16, 2, 214));
       isVoucherUsed = true;
       setState(() {});
     }
@@ -159,7 +159,7 @@ class _BannerScreenState extends State<BannerScreen> {
                               children: [
                                 Icon(
                                   Icons.info_outline_rounded,
-                                  color: scheme.primary,
+                                  color: Color.fromARGB(255, 16, 2, 214),
                                 ),
                                 const SizedBox(width: 10),
                                 const Expanded(
@@ -174,14 +174,14 @@ class _BannerScreenState extends State<BannerScreen> {
                                 Text(
                                   'Read more',
                                   style: TextStyle(
-                                    color: scheme.primary,
+                                    color: Color.fromARGB(255, 16, 2, 214),
                                     fontWeight: FontWeight.w600,
                                   ),
                                 ),
                                 const SizedBox(width: 8),
                                 Icon(
                                   Icons.arrow_forward_ios_outlined,
-                                  color: scheme.primary,
+                                  color: Color.fromARGB(255, 16, 2, 214),
                                   size: 15,
                                 ),
                               ],
@@ -219,7 +219,8 @@ class _BannerScreenState extends State<BannerScreen> {
                                         width: 5,
                                         height: 45,
                                         decoration: BoxDecoration(
-                                            color: scheme.primary,
+                                            color:
+                                                Color.fromARGB(255, 16, 2, 214),
                                             borderRadius:
                                                 const BorderRadius.only(
                                               topLeft: Radius.circular(15),
@@ -240,7 +241,8 @@ class _BannerScreenState extends State<BannerScreen> {
                                                       fontWeight:
                                                           FontWeight.w600,
                                                       fontSize: 16,
-                                                      color: scheme.primary),
+                                                      color: Color.fromARGB(
+                                                          255, 16, 2, 214)),
                                                 ),
                                               ),
                                               GestureDetector(
@@ -256,7 +258,8 @@ class _BannerScreenState extends State<BannerScreen> {
                                                   decoration: BoxDecoration(
                                                     color: isVoucherUsed
                                                         ? Colors.grey[400]
-                                                        : scheme.primary,
+                                                        : Color.fromARGB(
+                                                            255, 16, 2, 214),
                                                     borderRadius:
                                                         BorderRadius.circular(
                                                             10),

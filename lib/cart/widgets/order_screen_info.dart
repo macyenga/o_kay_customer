@@ -30,7 +30,7 @@ class OrderScreenInfo extends StatelessWidget {
             ? Container(
                 width: double.infinity,
                 height: 6,
-                color: scheme.primary,
+                color: Color.fromARGB(255, 16, 2, 214),
               )
             : const SizedBox(),
         SizedBox(height: !order.isPickup || order.isDelivered ? 60 : 0),
@@ -190,7 +190,7 @@ class OrderScreenInfo extends StatelessWidget {
                           ),
                           Icon(
                             Icons.message_outlined,
-                            color: scheme.primary,
+                            color: Color.fromARGB(255, 16, 2, 214),
                             size: 30,
                           ),
                         ],
@@ -240,7 +240,7 @@ class OrderScreenInfo extends StatelessWidget {
                       order.shop.shopName,
                       textAlign: TextAlign.end,
                       style: TextStyle(
-                        color: scheme.primary,
+                        color: Color.fromARGB(255, 16, 2, 214),
                         fontSize: 15,
                         fontWeight: FontWeight.w600,
                       ),

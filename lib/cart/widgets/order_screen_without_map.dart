@@ -20,7 +20,7 @@ class OrderScreenWithoutMap extends StatelessWidget {
       appBar: AppBar(
         elevation: 0.5,
         backgroundColor: Colors.white,
-        foregroundColor: scheme.primary,
+        foregroundColor: Color.fromARGB(255, 16, 2, 214),
         title: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -66,7 +66,7 @@ class OrderScreenWithoutMap extends StatelessWidget {
                 child: Text(
                   'Help',
                   style: TextStyle(
-                    color: scheme.primary,
+                    color: Color.fromARGB(255, 16, 2, 214),
                   ),
                 ),
               ),

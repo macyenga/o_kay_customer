@@ -1,7 +1,7 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 import 'package:o_kay_customer/models/shop.dart';
-import 'package:o_kay_customer/widgets/my_alert_dialog.dart';
+import 'package:o_kay_customer/widgets/dialog.dart';
 import 'package:provider/provider.dart';
 
 import 'package:o_kay_customer/authentication/widgets/custom_textbutton.dart';
@@ -418,7 +418,7 @@ class _CustomizeScreenState extends State<CustomizeScreen> {
                       }
                     });
                   },
-                  backgroundColor: scheme.primary,
+                  backgroundColor: Color.fromARGB(255, 16, 2, 214),
                   icon: const Icon(
                     Icons.remove,
                     color: Colors.white,
@@ -442,7 +442,7 @@ class _CustomizeScreenState extends State<CustomizeScreen> {
                       }
                     });
                   },
-                  backgroundColor: scheme.primary,
+                  backgroundColor: Color.fromARGB(255, 16, 2, 214),
                   icon: const Icon(
                     Icons.add,
                     color: Colors.white,

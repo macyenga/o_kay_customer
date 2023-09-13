@@ -7,7 +7,7 @@ import 'package:o_kay_customer/home_screen/screens/home_screen.dart';
 import 'package:o_kay_customer/providers/authentication_provider.dart';
 import 'package:o_kay_customer/providers/internet_provider.dart';
 import 'package:o_kay_customer/widgets/custom_textfield.dart';
-import 'package:o_kay_customer/widgets/my_snack_bar.dart';
+import 'package:o_kay_customer/widgets/custom_snackbar.dart';
 import 'package:provider/provider.dart';
 
 class FillAccountInfo extends StatefulWidget {
@@ -57,7 +57,8 @@ class _FillAccountInfoState extends State<FillAccountInfo> {
     await internetProvider.checkInternetConnection();
     if (internetProvider.hasInternet == false) {
       Navigator.pop(context);
-      openSnackbar(context, 'Check your internet connection', scheme.primary);
+      openSnackbar(context, 'Check your internet connection',
+          Color.fromARGB(255, 16, 2, 214));
     } else {
       if (errorText.isEmpty) {
         await authenticationProvider
@@ -71,7 +72,7 @@ class _FillAccountInfoState extends State<FillAccountInfo> {
             openSnackbar(
               context,
               authenticationProvider.errorCode,
-              scheme.primary,
+              Color.fromARGB(255, 16, 2, 214),
             );
             authenticationProvider.resetError();
           } else {
@@ -117,7 +118,7 @@ class _FillAccountInfoState extends State<FillAccountInfo> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
-        foregroundColor: scheme.primary,
+        foregroundColor: Color.fromARGB(255, 16, 2, 214),
         actions: [
           TextButton(
             onPressed: firstNameText.isEmpty ||
@@ -132,7 +133,7 @@ class _FillAccountInfoState extends State<FillAccountInfo> {
                         lastNameText.isEmpty ||
                         passwordText.isEmpty
                     ? Colors.grey[400]
-                    : scheme.primary,
+                    : Color.fromARGB(255, 16, 2, 214),
               ),
             ),
           )

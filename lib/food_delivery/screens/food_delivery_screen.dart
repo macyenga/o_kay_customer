@@ -7,8 +7,8 @@ import 'package:o_kay_customer/models/shop.dart';
 import 'package:o_kay_customer/home_screen/widgets/restaurant_card.dart';
 import 'package:o_kay_customer/providers/location_provider.dart';
 import 'package:o_kay_customer/shop_details/screens/shop_details.dart';
-import 'package:o_kay_customer/widgets/my_app_bar.dart';
 import 'package:provider/provider.dart';
+import 'package:o_kay_customer/widgets/barapp.dart';
 import 'package:o_kay_customer/models/banner.dart' as banner;
 
 class FoodDeliveryScreen extends StatefulWidget {
@@ -130,7 +130,7 @@ class _FoodDeliveryScreenState extends State<FoodDeliveryScreen> {
                         Text(
                           'See all',
                           style: TextStyle(
-                            color: scheme.primary,
+                            color: Color.fromARGB(255, 16, 2, 214),
                           ),
                         )
                       ],

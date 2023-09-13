@@ -101,7 +101,8 @@ class _ProductAvailabilityState extends State<ProductAvailability> {
                                       title: Text(option),
                                       leading: Radio(
                                         value: option,
-                                        activeColor: scheme.primary,
+                                        activeColor:
+                                            Color.fromARGB(255, 16, 2, 214),
                                         groupValue: widget.value,
                                         onChanged: (value) {
                                           // handleChange(value!);
@@ -150,7 +151,7 @@ class _ProductAvailabilityState extends State<ProductAvailability> {
                 ),
                 Icon(
                   Icons.arrow_forward_ios_outlined,
-                  color: scheme.primary,
+                  color: Color.fromARGB(255, 16, 2, 214),
                 )
               ],
             ),

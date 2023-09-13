@@ -1,7 +1,7 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 import 'package:o_kay_customer/shop_details/widgets/text_tag.dart';
-import 'package:o_kay_customer/widgets/my_snack_bar.dart';
+import 'package:o_kay_customer/widgets/custom_snackbar.dart';
 import 'package:intl/intl.dart';
 
 import 'package:o_kay_customer/constants/colors.dart';
@@ -83,7 +83,7 @@ class VoucherCard extends StatelessWidget {
                                     const SizedBox(width: 5),
                                     Icon(
                                       Icons.info_outline,
-                                      color: scheme.primary,
+                                      color: Color.fromARGB(255, 16, 2, 214),
                                       size: 15,
                                     ),
                                     const SizedBox(width: 5),
@@ -100,7 +100,7 @@ class VoucherCard extends StatelessWidget {
                                   '- \$ ${NumberFormat("###.##", "en_US").format(discountPrice)}',
                                   style: TextStyle(
                                     fontWeight: FontWeight.w600,
-                                    color: scheme.primary,
+                                    color: Color.fromARGB(255, 16, 2, 214),
                                     fontSize: 12,
                                   ),
                                 ),
@@ -110,7 +110,7 @@ class VoucherCard extends StatelessWidget {
                     isUsed
                         ? TextTag(
                             text: 'Used',
-                            backgroundColor: scheme.primary,
+                            backgroundColor: Color.fromARGB(255, 16, 2, 214),
                             textColor: Colors.white,
                           )
                         : const SizedBox(),
@@ -171,7 +171,7 @@ class VoucherCard extends StatelessWidget {
                                 openSnackbar(
                                     context,
                                     'This voucher already been used!',
-                                    scheme.primary);
+                                    Color.fromARGB(255, 16, 2, 214));
                               }
                             }
                           },
@@ -183,7 +183,7 @@ class VoucherCard extends StatelessWidget {
                               : 'Details',
                       style: TextStyle(
                         fontSize: 15,
-                        color: scheme.primary,
+                        color: Color.fromARGB(255, 16, 2, 214),
                         fontWeight: FontWeight.w600,
                       ),
                     ),

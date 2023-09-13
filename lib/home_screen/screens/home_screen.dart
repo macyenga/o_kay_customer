@@ -16,7 +16,7 @@ import 'package:o_kay_customer/providers/cart_provider.dart';
 import 'package:o_kay_customer/providers/location_provider.dart';
 import 'package:o_kay_customer/providers/order_provider.dart';
 import 'package:o_kay_customer/shop_details/screens/shop_details.dart';
-import 'package:o_kay_customer/widgets/my_app_bar.dart';
+import 'package:o_kay_customer/widgets/barapp.dart';
 import 'package:provider/provider.dart';
 
 class HomeScreen extends StatefulWidget {

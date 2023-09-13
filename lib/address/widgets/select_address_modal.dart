@@ -70,13 +70,14 @@ void showSelectAddressModal(BuildContext context, List<Address> addressList) {
                                     children: [
                                       Icon(
                                         Icons.near_me_sharp,
-                                        color: scheme.primary,
+                                        color: Color.fromARGB(255, 16, 2, 214),
                                       ),
                                       const SizedBox(width: 10),
                                       Text(
                                         'Use my current location',
                                         style: TextStyle(
-                                          color: scheme.primary,
+                                          color:
+                                              Color.fromARGB(255, 16, 2, 214),
                                           fontWeight: FontWeight.w600,
                                         ),
                                       ),
@@ -91,8 +92,9 @@ void showSelectAddressModal(BuildContext context, List<Address> addressList) {
                                     selectedAddress == lp.address
                                         ? Container(
                                             width: double.infinity,
-                                            color: scheme.primary
-                                                .withOpacity(0.05),
+                                            color:
+                                                Color.fromARGB(255, 16, 2, 214)
+                                                    .withOpacity(0.05),
                                             padding: const EdgeInsets.all(10),
                                             child: MapPreview(
                                                 selectedAddress:
@@ -120,14 +122,17 @@ void showSelectAddressModal(BuildContext context, List<Address> addressList) {
                                               },
                                               child: Icon(
                                                 Icons.edit_outlined,
-                                                color: scheme.primary,
+                                                color: Color.fromARGB(
+                                                    255, 16, 2, 214),
                                               ),
                                             )
                                           : const SizedBox(),
-                                      activeColor: scheme.primary,
+                                      activeColor:
+                                          Color.fromARGB(255, 16, 2, 214),
                                       selected: selectedAddress == lp.address,
                                       selectedTileColor:
-                                          scheme.primary.withOpacity(0.05),
+                                          Color.fromARGB(255, 16, 2, 214)
+                                              .withOpacity(0.05),
                                       title: Column(
                                         crossAxisAlignment:
                                             CrossAxisAlignment.start,
@@ -181,7 +186,8 @@ void showSelectAddressModal(BuildContext context, List<Address> addressList) {
                                               selectedAddress == address
                                                   ? Container(
                                                       width: double.infinity,
-                                                      color: scheme.primary
+                                                      color: Color.fromARGB(
+                                                              255, 16, 2, 214)
                                                           .withOpacity(0.05),
                                                       padding:
                                                           const EdgeInsets.all(
@@ -215,10 +221,12 @@ void showSelectAddressModal(BuildContext context, List<Address> addressList) {
                                                   },
                                                   child: Icon(
                                                     Icons.edit_outlined,
-                                                    color: scheme.primary,
+                                                    color: Color.fromARGB(
+                                                        255, 16, 2, 214),
                                                   ),
                                                 ),
-                                                activeColor: scheme.primary,
+                                                activeColor: Color.fromARGB(
+                                                    255, 16, 2, 214),
                                                 selected:
                                                     selectedAddress == address,
                                                 selectedTileColor: scheme
@@ -298,13 +306,13 @@ void showSelectAddressModal(BuildContext context, List<Address> addressList) {
                               children: [
                                 Icon(
                                   Icons.add,
-                                  color: scheme.primary,
+                                  color: Color.fromARGB(255, 16, 2, 214),
                                 ),
                                 const SizedBox(width: 10),
                                 Text(
                                   'Add New Address',
                                   style: TextStyle(
-                                    color: scheme.primary,
+                                    color: Color.fromARGB(255, 16, 2, 214),
                                     fontWeight: FontWeight.w600,
                                   ),
                                 )

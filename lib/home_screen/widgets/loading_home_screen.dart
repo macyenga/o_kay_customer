@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:o_kay_customer/widgets/skeleton_skimming.dart';
+import 'package:o_kay_customer/widgets/shimmer_effect.dart';
 
 class LoadingHomeScreen extends StatelessWidget {
   const LoadingHomeScreen({super.key});

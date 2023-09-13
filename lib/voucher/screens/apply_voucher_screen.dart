@@ -6,8 +6,8 @@ import 'package:o_kay_customer/voucher/controllers/voucher_controller.dart';
 import 'package:o_kay_customer/voucher/widgets/extended_voucher_card.dart';
 import 'package:o_kay_customer/voucher/widgets/voucher_card.dart';
 import 'package:o_kay_customer/voucher/widgets/voucher_detail_modal.dart';
+import 'package:o_kay_customer/widgets/dialog.dart';
 import 'package:o_kay_customer/widgets/custom_textfield.dart';
-import 'package:o_kay_customer/widgets/my_alert_dialog.dart';
 
 class ApplyVoucherScreen extends StatefulWidget {
   static const String routeName = '/apply-voucher-screen';
@@ -86,7 +86,7 @@ class _ApplyVoucherScreenState extends State<ApplyVoucherScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
-        foregroundColor: scheme.primary,
+        foregroundColor: Color.fromARGB(255, 16, 2, 214),
         elevation: 0.5,
         title: const Text(
           'Apply a voucher',

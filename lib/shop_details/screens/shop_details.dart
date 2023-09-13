@@ -151,7 +151,7 @@ class _ShopDetailScreenState extends State<ShopDetailScreen>
           height: 50,
           padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 15),
           decoration: BoxDecoration(
-            color: scheme.primary,
+            color: Color.fromARGB(255, 16, 2, 214),
             borderRadius: BorderRadius.circular(5),
           ),
           child: Row(
@@ -161,7 +161,7 @@ class _ShopDetailScreenState extends State<ShopDetailScreen>
                 width: 25,
                 height: 25,
                 decoration: BoxDecoration(
-                  color: scheme.primary,
+                  color: Color.fromARGB(255, 16, 2, 214),
                   border: Border.all(color: Colors.white, width: 1),
                   borderRadius: BorderRadius.circular(20),
                 ),

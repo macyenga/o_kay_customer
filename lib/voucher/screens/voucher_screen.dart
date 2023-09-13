@@ -66,7 +66,7 @@ class _VoucherScreenState extends State<VoucherScreen> {
       backgroundColor: Colors.grey[100],
       appBar: AppBar(
         backgroundColor: Colors.white,
-        foregroundColor: scheme.primary,
+        foregroundColor: Color.fromARGB(255, 16, 2, 214),
         elevation: 0.5,
         title: const Text(
           'Vouchers & Offers',
@@ -139,12 +139,12 @@ class _VoucherScreenState extends State<VoucherScreen> {
                                     decoration: BoxDecoration(
                                         color: sortBy == 'latest'
                                             ? Colors.white
-                                            : scheme.primary,
+                                            : Color.fromARGB(255, 16, 2, 214),
                                         borderRadius: BorderRadius.circular(20),
                                         border: Border.all(
                                           color: sortBy == 'latest'
                                               ? Colors.grey[400]!
-                                              : scheme.primary,
+                                              : Color.fromARGB(255, 16, 2, 214),
                                         )),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.min,

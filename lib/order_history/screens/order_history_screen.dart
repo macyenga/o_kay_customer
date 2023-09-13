@@ -52,7 +52,7 @@ class _OrderHistoryScreenState extends State<OrderHistoryScreen> {
             },
             icon: Icon(
               Icons.close,
-              color: scheme.primary,
+              color: Color.fromARGB(255, 16, 2, 214),
             ),
           ),
         ),
@@ -91,7 +91,7 @@ class _OrderHistoryScreenState extends State<OrderHistoryScreen> {
                         padding: const EdgeInsets.symmetric(
                             horizontal: 15, vertical: 8),
                         decoration: BoxDecoration(
-                          color: scheme.primary,
+                          color: Color.fromARGB(255, 16, 2, 214),
                           borderRadius: BorderRadius.circular(8),
                         ),
                         child: const Text(
@@ -306,7 +306,8 @@ class _OrderHistoryScreenState extends State<OrderHistoryScreen> {
                                               width: double.infinity,
                                               height: 40,
                                               decoration: BoxDecoration(
-                                                color: scheme.primary,
+                                                color: Color.fromARGB(
+                                                    255, 16, 2, 214),
                                                 borderRadius:
                                                     BorderRadius.circular(10),
                                               ),

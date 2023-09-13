@@ -84,7 +84,8 @@ class FAppBar extends SliverAppBar {
           const SizedBox(height: 4.0),
           Text(
             shop.remainingTime.toString() + ' min',
-            style: textTheme.caption?.copyWith(color: scheme.primary),
+            style: textTheme.caption
+                ?.copyWith(color: Color.fromARGB(255, 16, 2, 214)),
             strutStyle: Helper.buildStrutStyle(textTheme.caption),
           ),
         ],
@@ -102,8 +103,8 @@ class FAppBar extends SliverAppBar {
           isScrollable: true,
           controller: tabController,
           indicatorPadding: const EdgeInsets.symmetric(horizontal: 16.0),
-          indicatorColor: scheme.primary,
-          labelColor: scheme.primary,
+          indicatorColor: Color.fromARGB(255, 16, 2, 214),
+          labelColor: Color.fromARGB(255, 16, 2, 214),
           unselectedLabelColor: scheme.onSurface,
           indicatorWeight: 3.0,
           tabs: categoriesData.map((e) {

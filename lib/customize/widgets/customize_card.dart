@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:o_kay_customer/constants/colors.dart';
 import 'package:o_kay_customer/shop_details/widgets/text_tag.dart';
 import 'package:o_kay_customer/models/customize.dart';
-import 'package:o_kay_customer/widgets/my_snack_bar.dart';
+import 'package:o_kay_customer/widgets/custom_snackbar.dart';
 
 class CustomizeCard extends StatefulWidget {
   final Customize customize;
@@ -58,7 +58,7 @@ class _CustomizeCardState extends State<CustomizeCard> {
     return Container(
       decoration: BoxDecoration(
         color: widget.customize.isRequired
-            ? scheme.primary.withOpacity(0.05)
+            ? Color.fromARGB(255, 16, 2, 214).withOpacity(0.05)
             : Colors.white,
         border: Border.all(
           color: widget.customize.isRequired
@@ -89,7 +89,7 @@ class _CustomizeCardState extends State<CustomizeCard> {
                 widget.customize.isRequired
                     ? TextTag(
                         text: 'Required',
-                        backgroundColor: scheme.primary,
+                        backgroundColor: Color.fromARGB(255, 16, 2, 214),
                         textColor: Colors.white,
                       )
                     : TextTag(
@@ -107,7 +107,7 @@ class _CustomizeCardState extends State<CustomizeCard> {
               style: TextStyle(
                 fontSize: 14,
                 color: widget.customize.isRequired
-                    ? scheme.primary
+                    ? Color.fromARGB(255, 16, 2, 214)
                     : Colors.grey[500],
                 fontWeight: FontWeight.w700,
               ),
@@ -124,7 +124,7 @@ class _CustomizeCardState extends State<CustomizeCard> {
                         title: Text(choiceData.choice),
                         leading: Radio(
                           value: index,
-                          activeColor: scheme.primary,
+                          activeColor: Color.fromARGB(255, 16, 2, 214),
                           groupValue: _value,
                           onChanged: (value) {
                             // print(choiceData.choice);
@@ -145,7 +145,7 @@ class _CustomizeCardState extends State<CustomizeCard> {
                     : ListTile(
                         title: Text(choiceData.choice),
                         leading: Checkbox(
-                          activeColor: scheme.primary,
+                          activeColor: Color.fromARGB(255, 16, 2, 214),
                           value: widget.optionalIsSelected![index],
                           onChanged: (bool? value) {
                             if (value! &&
@@ -154,7 +154,7 @@ class _CustomizeCardState extends State<CustomizeCard> {
                               return openSnackbar(
                                 context,
                                 'You can only select ${widget.customize.selectAmount} options',
-                                scheme.primary,
+                                Color.fromARGB(255, 16, 2, 214),
                               );
                             }
 

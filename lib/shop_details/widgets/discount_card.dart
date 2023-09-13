@@ -25,12 +25,12 @@ class DiscountCard extends StatelessWidget {
         vertical: 20,
       ),
       decoration: BoxDecoration(
-        color: scheme.primary,
+        color: Color.fromARGB(255, 16, 2, 214),
         borderRadius: BorderRadius.circular(10.0),
         image: DecorationImage(
           fit: BoxFit.cover,
           colorFilter: ColorFilter.mode(
-            scheme.primary.withOpacity(0.08),
+            Color.fromARGB(255, 16, 2, 214).withOpacity(0.08),
             BlendMode.dstATop,
           ),
           image: AssetImage('assets/images/pattern.png'),

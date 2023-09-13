@@ -93,12 +93,12 @@ class _ActiveOrderBottomContainerState
                   width: 14,
                   height: 14,
                   decoration: BoxDecoration(
-                    color: scheme.primary,
+                    color: Color.fromARGB(255, 16, 2, 214),
                     shape: BoxShape.circle,
                     // borderRadius: BorderRadius.circular(20),
                     border: Border.all(
                         width: 2.5, color: Colors.pink[100]!.withAlpha(255)
-                        // color: scheme.primary.withOpacity(0.1),
+                        // color:Color.fromARGB(255, 16, 2, 214) .withOpacity(0.1),
                         ),
                   ),
                 ),
@@ -122,7 +122,7 @@ class _ActiveOrderBottomContainerState
                     isViewDetail
                         ? Icons.keyboard_arrow_up_sharp
                         : Icons.keyboard_arrow_down_sharp,
-                    color: scheme.primary,
+                    color: Color.fromARGB(255, 16, 2, 214),
                     size: 30,
                   ),
                 )

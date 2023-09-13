@@ -5,7 +5,7 @@ import 'package:o_kay_customer/constants/colors.dart';
 import 'package:o_kay_customer/providers/authentication_provider.dart';
 import 'package:o_kay_customer/providers/internet_provider.dart';
 import 'package:o_kay_customer/widgets/custom_textfield.dart';
-import 'package:o_kay_customer/widgets/my_snack_bar.dart';
+import 'package:o_kay_customer/widgets/custom_snackbar.dart';
 import 'package:provider/provider.dart';
 
 class PhoneNumberRegisterScreen extends StatefulWidget {
@@ -49,7 +49,8 @@ class _PhoneNumberRegisterScreenState extends State<PhoneNumberRegisterScreen> {
     await internetProvider.checkInternetConnection();
     if (internetProvider.hasInternet == false) {
       Navigator.pop(context);
-      openSnackbar(context, 'Check your internet connection', scheme.primary);
+      openSnackbar(context, 'Check your internet connection',
+          Color.fromARGB(255, 16, 2, 214));
     } else {
       String phoneNumber =
           '+${selectedCountry.phoneCode}${phoneNumberController.text}';
@@ -60,7 +61,7 @@ class _PhoneNumberRegisterScreenState extends State<PhoneNumberRegisterScreen> {
         openSnackbar(
           context,
           authenticationProvider.errorCode,
-          scheme.primary,
+          Color.fromARGB(255, 16, 2, 214),
         );
         authenticationProvider.resetError();
       } else {
@@ -76,7 +77,7 @@ class _PhoneNumberRegisterScreenState extends State<PhoneNumberRegisterScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
-        foregroundColor: scheme.primary,
+        foregroundColor: Color.fromARGB(255, 16, 2, 214),
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);
@@ -91,8 +92,9 @@ class _PhoneNumberRegisterScreenState extends State<PhoneNumberRegisterScreen> {
             child: Text(
               'Continue',
               style: TextStyle(
-                color:
-                    phoneNumberText.isEmpty ? Colors.grey[400] : scheme.primary,
+                color: phoneNumberText.isEmpty
+                    ? Colors.grey[400]
+                    : Color.fromARGB(255, 16, 2, 214),
               ),
             ),
           )

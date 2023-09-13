@@ -73,7 +73,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
       decoration: InputDecoration(
         errorText: widget.errorText == '' ? null : widget.errorText,
         errorMaxLines: 2,
-        suffixIconColor: scheme.primary,
+        suffixIconColor: Color.fromARGB(255, 16, 2, 214),
         suffixIcon: widget.noIcon
             ? const SizedBox()
             : IconButton(

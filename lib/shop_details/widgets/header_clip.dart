@@ -22,7 +22,7 @@ class HeaderClip extends StatelessWidget {
         children: [
           Container(
             height: 275,
-            color: scheme.primary,
+            color: Color.fromARGB(255, 16, 2, 214),
             child: FadeInImage.assetNetwork(
               placeholder: 'assets/images/transparent.png',
               image: shop.shopImage,

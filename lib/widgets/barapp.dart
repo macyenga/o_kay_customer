@@ -35,7 +35,7 @@ class MyAppBar extends StatelessWidget {
 
     return SliverAppBar(
       foregroundColor: foregroundColor ?? Colors.white,
-      backgroundColor: backgroundColor ?? scheme.primary,
+      backgroundColor: backgroundColor ?? Color.fromARGB(255, 16, 2, 214),
       expandedHeight: 110,
       collapsedHeight: 60,
       forceElevated: true,
@@ -45,7 +45,9 @@ class MyAppBar extends StatelessWidget {
       pinned: true,
       leading: leadingIcon ??
           BackButton(
-            color: foregroundColor == null ? Colors.white : scheme.primary,
+            color: foregroundColor == null
+                ? Colors.white
+                : Color.fromARGB(255, 16, 2, 214),
           ),
       actions: [
         IconButton(
@@ -54,7 +56,9 @@ class MyAppBar extends StatelessWidget {
           onPressed: () {},
           icon: Icon(
             Icons.favorite_border_rounded,
-            color: foregroundColor == null ? Colors.white : scheme.primary,
+            color: foregroundColor == null
+                ? Colors.white
+                : Color.fromARGB(255, 16, 2, 214),
           ),
         ),
         Stack(
@@ -67,7 +71,9 @@ class MyAppBar extends StatelessWidget {
               padding: EdgeInsets.zero,
               icon: Icon(
                 Icons.shopping_bag_outlined,
-                color: foregroundColor == null ? Colors.white : scheme.primary,
+                color: foregroundColor == null
+                    ? Colors.white
+                    : Color.fromARGB(255, 16, 2, 214),
               ),
             ),
             totalQuantity == 0
@@ -81,7 +87,7 @@ class MyAppBar extends StatelessWidget {
                       decoration: BoxDecoration(
                         color: foregroundColor == null
                             ? Colors.white
-                            : scheme.primary,
+                            : Color.fromARGB(255, 16, 2, 214),
                         borderRadius: BorderRadius.circular(20),
                       ),
                       child: Center(
@@ -91,7 +97,7 @@ class MyAppBar extends StatelessWidget {
                             totalQuantity.toString(),
                             style: TextStyle(
                               color: foregroundColor == null
-                                  ? scheme.primary
+                                  ? Color.fromARGB(255, 16, 2, 214)
                                   : Colors.white,
                               fontSize: 10,
                               fontWeight: FontWeight.w600,
@@ -140,7 +146,7 @@ class MyAppBar extends StatelessWidget {
                     width: double.infinity,
                     height: 38,
                     decoration: BoxDecoration(
-                      color: backgroundColor == scheme.primary
+                      color: backgroundColor == Color.fromARGB(255, 16, 2, 214)
                           ? Colors.white
                           : Colors.grey[100],
                       borderRadius: BorderRadius.circular(20),

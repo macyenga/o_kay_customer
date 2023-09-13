@@ -5,7 +5,7 @@ import 'package:o_kay_customer/authentication/screens/phone_number_register_scre
 import 'package:o_kay_customer/constants/colors.dart';
 import 'package:o_kay_customer/providers/authentication_provider.dart';
 import 'package:o_kay_customer/providers/internet_provider.dart';
-import 'package:o_kay_customer/widgets/my_snack_bar.dart';
+import 'package:o_kay_customer/widgets/custom_snackbar.dart';
 import 'package:provider/provider.dart';
 
 void showAuthenticationModal(BuildContext context) {
@@ -17,7 +17,8 @@ void showAuthenticationModal(BuildContext context) {
 
     if (internetProvider.hasInternet == false) {
       Navigator.pop(context);
-      openSnackbar(context, 'Check your internet connection', scheme.primary);
+      openSnackbar(context, 'Check your internet connection',
+          Color.fromARGB(255, 16, 2, 214));
     } else {
       await authenticationProvider.signInWithGoogle(context).then(
         (value) {
@@ -157,7 +158,8 @@ void showAuthenticationModal(BuildContext context) {
             InkWell(
               onTap: () {
                 Navigator.pop(context);
-                openSnackbar(context, 'message', scheme.primary);
+                openSnackbar(
+                    context, 'message', Color.fromARGB(255, 16, 2, 214));
               },
               splashColor: Colors.white70.withOpacity(0.1),
               child: Ink(
@@ -220,13 +222,13 @@ void showAuthenticationModal(BuildContext context) {
                 Navigator.pushNamed(
                     context, EmailAuthenticationScreen.routeName);
               },
-              splashColor: scheme.primary.withOpacity(0.05),
+              splashColor: Color.fromARGB(255, 16, 2, 214).withOpacity(0.05),
               child: Ink(
                 width: double.infinity,
                 height: 45,
                 decoration: BoxDecoration(
                   border: Border.all(
-                    color: scheme.primary,
+                    color: Color.fromARGB(255, 16, 2, 214),
                   ),
                   borderRadius: BorderRadius.circular(5),
                 ),
@@ -241,7 +243,7 @@ void showAuthenticationModal(BuildContext context) {
                           'Continue with email',
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                              color: scheme.primary,
+                              color: Color.fromARGB(255, 16, 2, 214),
                               fontWeight: FontWeight.w600),
                         ),
                       )

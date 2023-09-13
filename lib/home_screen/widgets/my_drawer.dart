@@ -5,7 +5,7 @@ import 'package:o_kay_customer/constants/colors.dart';
 import 'package:o_kay_customer/order_history/screens/order_history_screen.dart';
 import 'package:o_kay_customer/providers/authentication_provider.dart';
 import 'package:o_kay_customer/voucher/screens/voucher_screen.dart';
-import 'package:o_kay_customer/widgets/my_alert_dialog.dart';
+import 'package:o_kay_customer/widgets/dialog.dart';
 import 'package:provider/provider.dart';
 
 class MyDrawer extends StatelessWidget {
@@ -24,8 +24,8 @@ class MyDrawer extends StatelessWidget {
           Builder(builder: (c) {
             return DrawerHeader(
               decoration: BoxDecoration(
-                color: scheme.primary,
-                border: Border.all(color: scheme.primary),
+                color: Color.fromARGB(255, 16, 2, 214),
+                border: Border.all(color: Color.fromARGB(255, 16, 2, 214)),
               ),
               child: ap.isSignedIn
                   ? Column(
@@ -44,7 +44,7 @@ class MyDrawer extends StatelessWidget {
                                   ? ap.name!.substring(0, 1)
                                   : 'F',
                               style: TextStyle(
-                                color: scheme.primary,
+                                color: Color.fromARGB(255, 16, 2, 214),
                                 fontSize: 30,
                                 fontWeight: FontWeight.w700,
                               ),
@@ -226,7 +226,7 @@ class MyDrawer extends StatelessWidget {
             ),
             leading: Icon(
               icon,
-              color: scheme.primary,
+              color: Color.fromARGB(255, 16, 2, 214),
             ),
             onTap: onTap,
           );

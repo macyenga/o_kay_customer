@@ -39,7 +39,7 @@ class _HelpScreenState extends State<HelpScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
-        foregroundColor: scheme.primary,
+        foregroundColor: Color.fromARGB(255, 16, 2, 214),
         title: const Text(
           'Order Detail',
           style: TextStyle(
@@ -81,8 +81,9 @@ class _HelpScreenState extends State<HelpScreen> {
                       ),
                       TextTag(
                         text: order.isShopAccept ? 'Preparing' : 'Waiting',
-                        backgroundColor: scheme.primary.withOpacity(0.2),
-                        textColor: scheme.primary,
+                        backgroundColor:
+                            Color.fromARGB(255, 16, 2, 214).withOpacity(0.2),
+                        textColor: Color.fromARGB(255, 16, 2, 214),
                       ),
                     ],
                   ),

@@ -109,7 +109,7 @@ class _CartScreenState extends State<CartScreen> {
         ? Scaffold(
             appBar: AppBar(
               backgroundColor: Colors.white,
-              foregroundColor: scheme.primary,
+              foregroundColor: Color.fromARGB(255, 16, 2, 214),
               title: const Text(
                 'Cart',
                 style: TextStyle(
@@ -159,7 +159,7 @@ class _CartScreenState extends State<CartScreen> {
                       padding: const EdgeInsets.symmetric(
                           horizontal: 15, vertical: 8),
                       decoration: BoxDecoration(
-                        color: scheme.primary,
+                        color: Color.fromARGB(255, 16, 2, 214),
                         borderRadius: BorderRadius.circular(8),
                       ),
                       child: const Text(
@@ -178,7 +178,7 @@ class _CartScreenState extends State<CartScreen> {
         : Scaffold(
             appBar: AppBar(
               backgroundColor: Colors.white,
-              foregroundColor: scheme.primary,
+              foregroundColor: Color.fromARGB(255, 16, 2, 214),
               title: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -299,7 +299,8 @@ class _CartScreenState extends State<CartScreen> {
                                                     Icon(
                                                       Icons
                                                           .keyboard_arrow_down_outlined,
-                                                      color: scheme.primary,
+                                                      color: Color.fromARGB(
+                                                          255, 16, 2, 214),
                                                     ),
                                                   ],
                                                 ),
@@ -547,7 +548,7 @@ class _CartScreenState extends State<CartScreen> {
                               child: Text(
                                 'Add more items',
                                 style: TextStyle(
-                                  color: scheme.primary,
+                                  color: Color.fromARGB(255, 16, 2, 214),
                                 ),
                               ),
                             ),

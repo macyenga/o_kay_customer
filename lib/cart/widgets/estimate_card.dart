@@ -55,7 +55,7 @@ class EstimateCard extends StatelessWidget {
                 'Change',
                 style: TextStyle(
                   fontSize: 15,
-                  color: scheme.primary,
+                  color: Color.fromARGB(255, 16, 2, 214),
                 ),
               )
             ],

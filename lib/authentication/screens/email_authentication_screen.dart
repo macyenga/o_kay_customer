@@ -8,7 +8,7 @@ import 'package:o_kay_customer/constants/colors.dart';
 import 'package:o_kay_customer/providers/authentication_provider.dart';
 import 'package:o_kay_customer/providers/internet_provider.dart';
 import 'package:o_kay_customer/widgets/custom_textfield.dart';
-import 'package:o_kay_customer/widgets/my_snack_bar.dart';
+import 'package:o_kay_customer/widgets/custom_snackbar.dart';
 import 'package:provider/provider.dart';
 
 class EmailAuthenticationScreen extends StatefulWidget {
@@ -43,7 +43,8 @@ class _EmailAuthenticationScreenState extends State<EmailAuthenticationScreen> {
     await internetProvider.checkInternetConnection();
     if (internetProvider.hasInternet == false) {
       Navigator.pop(context);
-      openSnackbar(context, 'Check your internet connection', scheme.primary);
+      openSnackbar(context, 'Check your internet connection',
+          Color.fromARGB(255, 16, 2, 214));
     } else {
       if (errorText.isEmpty) {
         bool isEmailExist = await authenticationProvider
@@ -85,14 +86,16 @@ class _EmailAuthenticationScreenState extends State<EmailAuthenticationScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
-        foregroundColor: scheme.primary,
+        foregroundColor: Color.fromARGB(255, 16, 2, 214),
         actions: [
           TextButton(
             onPressed: emailText.isEmpty ? null : handleEmailSignIn,
             child: Text(
               'Continue',
               style: TextStyle(
-                color: emailText.isEmpty ? Colors.grey[400] : scheme.primary,
+                color: emailText.isEmpty
+                    ? Colors.grey[400]
+                    : Color.fromARGB(255, 16, 2, 214),
               ),
             ),
           )

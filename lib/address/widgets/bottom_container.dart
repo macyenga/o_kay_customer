@@ -154,7 +154,7 @@ class _BottomContainerState extends State<BottomContainer> {
                             },
                             icon: Icon(
                               Icons.arrow_back_rounded,
-                              color: scheme.primary,
+                              color: Color.fromARGB(255, 16, 2, 214),
                             ),
                           ),
                           const SizedBox(
@@ -381,7 +381,7 @@ class _BottomContainerState extends State<BottomContainer> {
                                 children: [
                                   Icon(
                                     Icons.location_on_outlined,
-                                    color: scheme.primary,
+                                    color: Color.fromARGB(255, 16, 2, 214),
                                     size: 30,
                                   ),
                                   const SizedBox(width: 20),
@@ -412,7 +412,7 @@ class _BottomContainerState extends State<BottomContainer> {
                             const SizedBox(width: 20),
                             Icon(
                               Icons.edit_outlined,
-                              color: scheme.primary,
+                              color: Color.fromARGB(255, 16, 2, 214),
                               size: 30,
                             ),
                           ],

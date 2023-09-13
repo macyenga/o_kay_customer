@@ -30,7 +30,9 @@ class ProgressStepper extends StatelessWidget {
                 child: Container(
                   width: 20,
                   height: 6,
-                  color: activeStep >= 1 ? scheme.primary : Colors.grey[300],
+                  color: activeStep >= 1
+                      ? Color.fromARGB(255, 16, 2, 214)
+                      : Colors.grey[300],
                 ),
               ),
               isProgess
@@ -38,12 +40,14 @@ class ProgressStepper extends StatelessWidget {
                       width: 30,
                       height: 30,
                       decoration: BoxDecoration(
-                        color: activeStep >= 1 ? scheme.primary : Colors.white,
+                        color: activeStep >= 1
+                            ? Color.fromARGB(255, 16, 2, 214)
+                            : Colors.white,
                         borderRadius: BorderRadius.circular(20),
                         border: Border.all(
                           width: 5,
                           color: activeStep >= 1
-                              ? scheme.primary
+                              ? Color.fromARGB(255, 16, 2, 214)
                               : Colors.grey[200]!,
                         ),
                       ),
@@ -64,7 +68,9 @@ class ProgressStepper extends StatelessWidget {
                 child: Container(
                   width: 20,
                   height: 6,
-                  color: activeStep >= 2 ? scheme.primary : Colors.grey[300],
+                  color: activeStep >= 2
+                      ? Color.fromARGB(255, 16, 2, 214)
+                      : Colors.grey[300],
                 ),
               ),
               isProgess
@@ -72,12 +78,14 @@ class ProgressStepper extends StatelessWidget {
                       width: 30,
                       height: 30,
                       decoration: BoxDecoration(
-                        color: activeStep >= 2 ? scheme.primary : Colors.white,
+                        color: activeStep >= 2
+                            ? Color.fromARGB(255, 16, 2, 214)
+                            : Colors.white,
                         borderRadius: BorderRadius.circular(20),
                         border: Border.all(
                           width: 5,
                           color: activeStep >= 2
-                              ? scheme.primary
+                              ? Color.fromARGB(255, 16, 2, 214)
                               : Colors.grey[200]!,
                         ),
                       ),
@@ -98,7 +106,9 @@ class ProgressStepper extends StatelessWidget {
                 child: Container(
                   width: 20,
                   height: 6,
-                  color: activeStep >= 3 ? scheme.primary : Colors.grey[300],
+                  color: activeStep >= 3
+                      ? Color.fromARGB(255, 16, 2, 214)
+                      : Colors.grey[300],
                 ),
               ),
               isProgess
@@ -106,12 +116,14 @@ class ProgressStepper extends StatelessWidget {
                       width: 30,
                       height: 30,
                       decoration: BoxDecoration(
-                        color: activeStep >= 3 ? scheme.primary : Colors.white,
+                        color: activeStep >= 3
+                            ? Color.fromARGB(255, 16, 2, 214)
+                            : Colors.white,
                         borderRadius: BorderRadius.circular(20),
                         border: Border.all(
                           width: 5,
                           color: activeStep >= 3
-                              ? scheme.primary
+                              ? Color.fromARGB(255, 16, 2, 214)
                               : Colors.grey[200]!,
                         ),
                       ),
@@ -132,7 +144,9 @@ class ProgressStepper extends StatelessWidget {
                 child: Container(
                   width: 20,
                   height: 6,
-                  color: activeStep > 3 ? scheme.primary : Colors.grey[300],
+                  color: activeStep > 3
+                      ? Color.fromARGB(255, 16, 2, 214)
+                      : Colors.grey[300],
                 ),
               ),
             ],
