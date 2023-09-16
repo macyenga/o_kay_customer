@@ -30,7 +30,7 @@ class MapWidget extends StatelessWidget {
       myLocationEnabled: true,
       compassEnabled: false,
       zoomGesturesEnabled: true,
-      zoomControlsEnabled: true,
+      zoomControlsEnabled: false,
       onMapCreated: onMapCreated,
       onCameraMove: onCameraMove,
       onCameraIdle: onCameraIdle,
