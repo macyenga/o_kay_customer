@@ -39,7 +39,7 @@ class _PickLocationScreenState extends State<PickLocationScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Image.asset(
-                  'assets/images/foodpanda_cart.png',
+                  'assets/images/kay/cart.png',
                   width: 150,
                 ),
                 const SizedBox(height: 15),

@@ -46,7 +46,7 @@ class AddressScreenState extends State<AddressScreen> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Image.asset(
-                        'assets/images/foodpanda_location.png',
+                        'assets/images/kay/shop-local.png',
                         width: 150,
                       ),
                       const SizedBox(height: 15),

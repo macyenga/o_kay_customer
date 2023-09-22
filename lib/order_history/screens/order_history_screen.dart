@@ -63,7 +63,7 @@ class _OrderHistoryScreenState extends State<OrderHistoryScreen> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Image.asset(
-                      'assets/images/browse_restaurant_icon.png',
+                      'assets/images/kay/shop-local.png',
                       width: 90,
                     ),
                     const SizedBox(height: 85),

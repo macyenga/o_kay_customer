@@ -232,7 +232,7 @@ class _BottomContainerState extends State<BottomContainer> {
                               child: Column(
                                 children: [
                                   Image.asset(
-                                    'assets/images/foodpanda_location.png',
+                                    'assets/images/kay/shop-local.png',
                                     width: 120,
                                   ),
                                   const SizedBox(height: 20),

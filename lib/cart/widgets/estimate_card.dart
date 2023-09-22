@@ -27,7 +27,7 @@ class EstimateCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.end,
         children: [
           Image.asset(
-            'assets/images/delivery.png',
+            'assets/images/kay/trolley.png',
             height: 95,
           ),
           const SizedBox(width: 10),

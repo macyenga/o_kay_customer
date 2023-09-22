@@ -112,7 +112,7 @@ class _PhoneNumberRegisterScreenState extends State<PhoneNumberRegisterScreen> {
                   Padding(
                     padding: const EdgeInsets.only(left: 15, bottom: 20),
                     child: Image.asset(
-                      'assets/images/mobile_icon.png',
+                      'assets/images/kay/contact-book.png',
                       width: 60,
                     ),
                   ),

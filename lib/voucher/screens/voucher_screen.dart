@@ -94,7 +94,7 @@ class _VoucherScreenState extends State<VoucherScreen> {
                             SizedBox(height: 40),
                             Image(
                               image: AssetImage(
-                                'assets/images/voucher_panda.png',
+                                'assets/images/kay/voucher.png',
                               ),
                               width: 90,
                               fit: BoxFit.fitWidth,

@@ -34,13 +34,13 @@ class _OrderScreenWithMapState extends State<OrderScreenWithMap> {
 
   void addCustomIcon() async {
     final Uint8List shopByte =
-        await getBytesFromAsset('assets/images/location_shop_marker.png', 100);
+        await getBytesFromAsset('assets/images/kay/shop-local.png', 100);
 
     final Uint8List riderByte =
-        await getBytesFromAsset('assets/images/location_rider_marker.png', 100);
+        await getBytesFromAsset('assets/images/kay/shop-local.png', 100);
 
     final Uint8List userByte =
-        await getBytesFromAsset('assets/images/location_user_marker.png', 100);
+        await getBytesFromAsset('assets/images/kay/user.png', 100);
 
     shopIcon = BitmapDescriptor.fromBytes(shopByte);
     riderIcon = BitmapDescriptor.fromBytes(riderByte);

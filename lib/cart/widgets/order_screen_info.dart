@@ -46,7 +46,7 @@ class OrderScreenInfo extends StatelessWidget {
                         color: Colors.grey[200],
                         image: const DecorationImage(
                           image: AssetImage(
-                              'assets/images/foodpanda_location.png'),
+                              'assets/images/kay/shop-local.png'),
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -167,7 +167,7 @@ class OrderScreenInfo extends StatelessWidget {
                         children: [
                           CircleAvatar(
                             backgroundImage:
-                                AssetImage('assets/images/foodpanda_panda.png'),
+                                AssetImage('assets/images/kay/tra_kay.png'),
                           ),
                           const SizedBox(width: 15),
                           Expanded(

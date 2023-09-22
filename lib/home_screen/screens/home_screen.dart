@@ -191,7 +191,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     right: 5,
                     child: Image(
                       width: 150,
-                      image: AssetImage('assets/images/food_delivery.png'),
+                      image: AssetImage('assets/images/kay/trolley.png'),
                     ),
                   ),
                   Padding(
@@ -297,7 +297,8 @@ class _HomeScreenState extends State<HomeScreen> {
                             right: 0,
                             child: Image(
                               width: 100,
-                              image: AssetImage('assets/images/pick_up.png'),
+                              image: AssetImage(
+                                  'assets/images/kay/food-delivery.png'),
                             ),
                           ),
                           Padding(
@@ -345,7 +346,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             right: 0,
                             child: Image(
                               width: 55,
-                              image: AssetImage('assets/images/pandasend.png'),
+                              image: AssetImage('assets/images/kay/send.png'),
                             ),
                           ),
                           Padding(

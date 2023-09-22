@@ -108,7 +108,7 @@ class _PhoneOTPScreenState extends State<PhoneOTPScreen> {
                 Padding(
                   padding: const EdgeInsets.only(left: 15, bottom: 20),
                   child: Image.asset(
-                    'assets/images/otp_icon.png',
+                    'assets/images/kay/pin.png',
                     width: 60,
                   ),
                 ),

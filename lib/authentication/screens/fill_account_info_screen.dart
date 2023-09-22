@@ -152,7 +152,7 @@ class _FillAccountInfoState extends State<FillAccountInfo> {
                     Padding(
                       padding: const EdgeInsets.only(left: 15, bottom: 20),
                       child: Image.asset(
-                        'assets/images/profile_icon.png',
+                        'assets/images/kay/follow-us.png',
                         width: 60,
                       ),
                     ),

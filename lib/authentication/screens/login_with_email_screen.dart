@@ -144,7 +144,7 @@ class _LoginWithEmailScreenState extends State<LoginWithEmailScreen> {
                   Padding(
                     padding: const EdgeInsets.only(left: 15, bottom: 20),
                     child: Image.asset(
-                      'assets/images/login_icon.png',
+                      'assets/images/kay/pin.png',
                       width: 60,
                     ),
                   ),

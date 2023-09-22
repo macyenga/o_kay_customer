@@ -55,7 +55,7 @@ Future<void> showVoucherDetailModal({
                   const Image(
                     width: 35,
                     fit: BoxFit.fitWidth,
-                    image: AssetImage('assets/images/percentage_icon.png'),
+                    image: AssetImage('assets/images/kay/tax.png'),
                   ),
                   const SizedBox(width: 10),
                   Expanded(
