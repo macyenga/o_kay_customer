@@ -9,7 +9,6 @@ import 'package:o_kay_customer/address/controllers/address_controller.dart';
 import 'package:o_kay_customer/address/controllers/network_utils.dart';
 import 'package:o_kay_customer/address/widgets/label_button.dart';
 import 'package:o_kay_customer/authentication/widgets/custom_textbutton.dart';
-import 'package:o_kay_customer/constants/colors.dart';
 import 'package:o_kay_customer/models/address.dart';
 import 'package:o_kay_customer/widgets/custom_textfield.dart';
 import 'package:provider/provider.dart';

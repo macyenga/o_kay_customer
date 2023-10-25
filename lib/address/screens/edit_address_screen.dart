@@ -10,7 +10,6 @@ import 'package:provider/provider.dart';
 import 'package:o_kay_customer/address/controllers/address_controller.dart';
 import 'package:o_kay_customer/address/widgets/bottom_container.dart';
 import 'package:o_kay_customer/address/widgets/map_widget.dart';
-import 'package:o_kay_customer/constants/colors.dart';
 import 'package:o_kay_customer/models/address.dart';
 import 'package:o_kay_customer/providers/location_provider.dart';
 import 'package:o_kay_customer/shop_details/widgets/ficon_button.dart';
