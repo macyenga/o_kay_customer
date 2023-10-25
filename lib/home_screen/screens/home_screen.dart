@@ -208,7 +208,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           ),
                         ),
                         Text(
-                          'Order GAS  you love',
+                          'Order gas  you love',
                           style: TextStyle(
                             fontWeight: FontWeight.w400,
                             height: 1,
@@ -297,8 +297,8 @@ class _HomeScreenState extends State<HomeScreen> {
                             right: 0,
                             child: Image(
                               width: 100,
-                              image: AssetImage(
-                                  'assets/images/kay/grocery.png'),
+                              image:
+                                  AssetImage('assets/images/kay/grocery.png'),
                             ),
                           ),
                           Padding(
