@@ -52,7 +52,7 @@ class MyDrawer extends StatelessWidget {
                           ),
                         ),
                         Text(
-                          ap.name!.isNotEmpty ? ap.name! : 'Foodpanda',
+                          ap.name!.isNotEmpty ? ap.name! : 'Kay',
                           style: const TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.w700,

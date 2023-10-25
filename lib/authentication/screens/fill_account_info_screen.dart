@@ -165,7 +165,7 @@ class _FillAccountInfoState extends State<FillAccountInfo> {
                     ),
                     const SizedBox(height: 20),
                     Text(
-                      'First, let\'s create your foodpanda account with ${widget.email}',
+                      'First, let\'s create your Kay account with ${widget.email}',
                       style: const TextStyle(
                         fontSize: 14,
                       ),

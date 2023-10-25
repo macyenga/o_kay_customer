@@ -144,7 +144,7 @@ Future<void> showVoucherDetailModal({
                             SizedBox(width: 3),
                             Expanded(
                               child: Text(
-                                'foodpanda may at any time in its sole and absolute discretion exclude, void, discontinue or disqualify you from any voucher, deal, or promotion without prior notice.',
+                                'Kay may at any time in its sole and absolute discretion exclude, void, discontinue or disqualify you from any voucher, deal, or promotion without prior notice.',
                                 style: TextStyle(fontSize: 14),
                               ),
                             ),
@@ -161,7 +161,7 @@ Future<void> showVoucherDetailModal({
                             SizedBox(width: 3),
                             Expanded(
                               child: Text(
-                                'foodpanda may at any time in its sole and absolute discretion withdraw, amend and/or alter any applicable terms and conditions of the voucher, deals, or promotions without prior notice.',
+                                'Kay may at any time in its sole and absolute discretion withdraw, amend and/or alter any applicable terms and conditions of the voucher, deals, or promotions without prior notice.',
                                 style: TextStyle(
                                   fontSize: 14,
                                 ),

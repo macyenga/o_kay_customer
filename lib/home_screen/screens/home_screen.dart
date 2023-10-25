@@ -191,7 +191,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     right: 5,
                     child: Image(
                       width: 150,
-                      image: AssetImage('assets/images/kay/trolley.png'),
+                      image: AssetImage('assets/images/kay/all.png'),
                     ),
                   ),
                   Padding(
@@ -201,14 +201,14 @@ class _HomeScreenState extends State<HomeScreen> {
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         Text(
-                          'Food delivery',
+                          'GAS delivery',
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 25,
                           ),
                         ),
                         Text(
-                          'Order food you love',
+                          'Order GAS  you love',
                           style: TextStyle(
                             fontWeight: FontWeight.w400,
                             height: 1,
@@ -298,7 +298,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             child: Image(
                               width: 100,
                               image: AssetImage(
-                                  'assets/images/kay/food-delivery.png'),
+                                  'assets/images/kay/grocery.png'),
                             ),
                           ),
                           Padding(
@@ -357,7 +357,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
-                                  'pandasend',
+                                  'Kaysend',
                                   style: TextStyle(
                                     color: MyColors.textColor,
                                     fontWeight: FontWeight.bold,

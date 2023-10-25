@@ -131,13 +131,13 @@ class _CartScreenState extends State<CartScreen> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Image.asset(
-                    'assets/images/kay/cart_891440.png',
+                    'assets/images/kay/cart.png',
                     width: 150,
                   ),
                   const SizedBox(height: 15),
                   const Text(
                     textAlign: TextAlign.center,
-                    'Hungry?',
+                    'Hurry?',
                     style: TextStyle(
                       fontSize: 25,
                       fontWeight: FontWeight.w700,
